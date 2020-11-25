@@ -9,7 +9,7 @@ pipeline{
                 steps{
                     script{
                         if (env.rollback == 'false'){
-                            image = docker.build("[your-dockerhub-username]/chaperoo-frontend")
+                            image = docker.build("thomashennessy/chaperoo-frontend")
                         }
                     }
                 }
